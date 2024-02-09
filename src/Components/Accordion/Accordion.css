@@ -1,0 +1,19 @@
+.accordion-container {
+    max-width: 1300px;
+    margin: 4rem auto;
+}
+
+.accordion-content > button {
+    margin: 1rem auto;
+    display: block;
+    width: 600px;
+    padding: 1rem;
+    background-color: #fff;
+    color: #001a4d;
+    cursor: pointer;
+}
+
+.accordion-content > button:hover {
+    background-color: #001a4d;
+    color: #fff;
+}

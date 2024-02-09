@@ -1,0 +1,33 @@
+.accordion-card {
+    background-color: #fff;
+    color: #001a4d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card-header {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.card-header:hover {
+    background-color: #ddd;
+}
+
+.card-body {
+    padding: 1rem;
+    min-height: 100px;
+    max-height: max-content;
+    display: none;
+}
+
+.card-body.active {
+    display: block;
+}
+
