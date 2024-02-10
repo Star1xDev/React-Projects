@@ -1,0 +1,43 @@
+.random-color-container {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    border-top: 1px solid transparent;
+}
+
+.controlButtons {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.controlButtons button {
+    padding: 1rem 1.5rem;
+    margin: 0 1rem;
+    font-weight: bold;
+    border-radius: .65rem;
+    border: none;
+    background-color: #fff;
+    color: #555;
+    transition: all .3s ease;
+    
+}
+
+.controlButtons button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.random-color-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    font-size: 3rem;
+    color: #fff;
+}
+
+
+
