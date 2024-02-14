@@ -5,29 +5,24 @@ const LoadMoreData = () => {
     const [loading, setLoading] = useState(false);
     const [products, setProducts] = useState([]);
     
-    const fetchProduct =  (url) => {
+    const fetchProduct =  (url, signal) => {
         // setLoading(true);
-        fetch(url)
+        fetch(url, signal)
         .then((res) => res.json())
         .then((data) => {
-            
+            // console.log(products);
             // setProducts([...products, ...data.products]);
             setProducts((prevData) => [...prevData, ...data.products]);
             // setLoading(false);
-        });
+        }).catch(e => console.log(e.message));
     }
-
-    useEffect(() => {
-        console.log(products);
-
-    }, [products])
     
-
     useEffect(() => {
+        const abortCont = new AbortController()
 
-        
-        fetchProduct("https://dummyjson.com/products?limit=10");
-    
+        console.log("render")
+        fetchProduct("https://dummyjson.com/products?limit=10", { signal : abortCont.signal});
+        return () => setTimeout(() => abortCont.abort(), 100);
     }, []);
 
     const handleLoadMore = () => {

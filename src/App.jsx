@@ -14,7 +14,7 @@ function App() {
      {/* <RandomColor /> */}
      {/* <StarRating numOfStars={10} /> */}
      {/* <ImageSlider /> */}
-     <LoadMoreData />
+     {/* <LoadMoreData /> */}
     </>
   )
 }
