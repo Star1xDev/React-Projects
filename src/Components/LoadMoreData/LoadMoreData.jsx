@@ -6,16 +6,26 @@ const LoadMoreData = () => {
     const [products, setProducts] = useState([]);
     
     const fetchProduct =  (url) => {
-        setLoading(true);
+        // setLoading(true);
         fetch(url)
         .then((res) => res.json())
         .then((data) => {
-            setProducts(prev => [...prev, ...data.products]);
-            setLoading(false);
+            
+            // setProducts([...products, ...data.products]);
+            setProducts((prevData) => [...prevData, ...data.products]);
+            // setLoading(false);
         });
     }
 
     useEffect(() => {
+        console.log(products);
+
+    }, [products])
+    
+
+    useEffect(() => {
+
+        
         fetchProduct("https://dummyjson.com/products?limit=10");
     
     }, []);
