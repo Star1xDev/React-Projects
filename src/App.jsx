@@ -3,6 +3,7 @@ import Accordion from './Components/Accordion/Accordion';
 import RandomColor from './Components/RandomColor/RandomColor';
 import StarRating from './Components/StarRating/StarRating';
 import ImageSlider from './Components/ImageSlider/ImageSlider';
+import LoadMoreData from './Components/LoadMoreData/LoadMoreData';
 
 function App() {
   
@@ -12,7 +13,8 @@ function App() {
      {/* <Accordion /> */}
      {/* <RandomColor /> */}
      {/* <StarRating numOfStars={10} /> */}
-     <ImageSlider />
+     {/* <ImageSlider /> */}
+     <LoadMoreData />
     </>
   )
 }

@@ -17,7 +17,7 @@ const ImageSlider = () => {
         
     };
 
-    fetchImages("https://picsum.photos/v2/list?page=4&limit=10");
+    fetchImages("https://picsum.photos/v2/list?page=6&limit=10");
 
   }, []);
 
