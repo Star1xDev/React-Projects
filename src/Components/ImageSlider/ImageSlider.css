@@ -1,0 +1,41 @@
+
+.slider {
+    /* background-color: red; */
+    width: max-content;
+    position: relative;
+    /* background-color: aqua; */
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    display: block;
+}
+
+
+
+button {
+    margin: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+.slider-circles {
+    /* background-color: black; */
+    position: absolute;
+    bottom: 5rem;
+    left: 6rem;
+}
+
+span.circle {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: grey;
+    margin: 0 2px;
+}
+
+span.circle.active {
+    background-color: #fff;
+}
