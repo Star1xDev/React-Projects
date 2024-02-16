@@ -5,6 +5,7 @@ import StarRating from './Components/StarRating/StarRating';
 import ImageSlider from './Components/ImageSlider/ImageSlider';
 import LoadMoreData from './Components/LoadMoreData/LoadMoreData';
 import TreeView from './Components/TreeView/TreeView';
+import QRCodeGenerator from './Components/QRCodeGenerator/QRCodeGenerator';
 
 function App() {
   
@@ -16,7 +17,8 @@ function App() {
      {/* <StarRating numOfStars={10} /> */}
      {/* <ImageSlider /> */}
      {/* <LoadMoreData /> */}
-      <TreeView />
+     {/* <TreeView /> */}
+     {/* <QRCodeGenerator /> */}
     </>
   )
 }

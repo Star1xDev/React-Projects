@@ -1,0 +1,59 @@
+.QRCode-container  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.QRCode-container {
+    background-color: #282828;
+    color: #fff;
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 1px solid transparent;
+    border-radius: .65rem;
+}
+
+.QRCode-container h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.QRCode-input {
+    display: flex;
+    padding: 0 1rem;
+    
+}
+
+.QRCode-input input {
+    flex: 70%;
+    padding: 1rem .5rem;
+    font-size: 1rem;
+    border: none;
+    
+}
+
+.QRCode-input input:focus, .QRCode-input input:active {
+    outline: none;
+}
+
+.QRCode-input button {
+    background-color: #5e43f3;
+    flex: 30%;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+}
+
+.QRCode-input button:hover {
+    background-color: #7a5af5;
+    cursor: pointer;
+}
+
+.QRCode-image {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+
+}

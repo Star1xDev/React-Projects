@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "./MenuItem.css"
-
 const MenuItem = ({info}) => {
     // const [children, setChildren] = useState([]);
     const [show, setShow] = useState(false);
@@ -22,7 +21,6 @@ const MenuItem = ({info}) => {
             {info.children && show ? "-" : null}
             <ul>
             { show && info.children && info.children.map((child) => (
-                
                   <MenuItem key={child.label} info={child} />
             ))}
             </ul>
