@@ -6,6 +6,7 @@ import ImageSlider from './Components/ImageSlider/ImageSlider';
 import LoadMoreData from './Components/LoadMoreData/LoadMoreData';
 import TreeView from './Components/TreeView/TreeView';
 import QRCodeGenerator from './Components/QRCodeGenerator/QRCodeGenerator';
+import LightDarkMode from './Components/LightDarkMode/LightDarkMode';
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
      {/* <LoadMoreData /> */}
      {/* <TreeView /> */}
      {/* <QRCodeGenerator /> */}
+     <LightDarkMode />
     </>
   )
 }
