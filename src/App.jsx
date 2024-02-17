@@ -8,6 +8,7 @@ import TreeView from './Components/TreeView/TreeView';
 import QRCodeGenerator from './Components/QRCodeGenerator/QRCodeGenerator';
 import LightDarkMode from './Components/LightDarkMode/LightDarkMode';
 import ScrollIndicator from './Components/ScrollIndicator/ScrollIndicator';
+import TabTest from './Components/CustomTabs/Tab-test';
 
 function App() {
   
@@ -23,6 +24,7 @@ function App() {
      {/* <QRCodeGenerator /> */}
      {/* <LightDarkMode /> */}
      {/* <ScrollIndicator getUrl="https://dummyjson.com/products/?limit=100" /> */}
+     <TabTest />
     </>
   )
 }

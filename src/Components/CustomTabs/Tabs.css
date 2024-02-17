@@ -1,0 +1,34 @@
+.tabs-container {
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.tabs-headings {
+    background-color: #ccc;
+    display: flex;
+    justify-content: stretch;
+    border-top: 1px solid transparent;
+    border-top-left-radius: .65rem;
+    border-top-right-radius: .65rem;
+
+}
+
+.tab-header {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+}
+
+.tab-header.active {
+    background-color: aqua;
+}
+
+.tabs-content {
+    padding: 2rem 1rem;
+    background-color: azure;
+    border-bottom: 1px solid transparent;
+    border-bottom-left-radius: .65rem;
+    border-bottom-right-radius: .65rem;
+    min-height: 200px;
+}
