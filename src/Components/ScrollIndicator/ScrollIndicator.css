@@ -1,0 +1,41 @@
+.ScrollIndicator-container {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ScrollIndicator-container h1 {
+    /* margin: 2rem; */
+    background-color: aqua;
+    align-self: stretch;
+    text-align: center;
+    padding: 2rem;
+}
+
+.scroll-progress-bar-container {
+    height: .5rem;
+    align-self: stretch;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.current-progress-bar {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,67,1) 35%, rgba(0,212,255,1) 100%);
+    height: 100%;
+    box-shadow: 0 4px 2px -2px gray;
+    transition: all .1s ease-in;
+}
+
+.data-container {
+    /* background-color: aliceblue; */
+    text-align: center;
+}
+
+.data-container div {
+    margin: 1rem;
+}

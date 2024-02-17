@@ -13,12 +13,6 @@ export default function useLocalStorage(key, defaultValue) {
     
   }, [key, value]);
 
-  useEffect(() => {
-    return () => {
-        console.log("called", key)
-        localStorage.clear()
-    }
-  }, [])
 
   return [value, setValue];
 }
